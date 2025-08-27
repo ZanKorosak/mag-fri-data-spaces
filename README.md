@@ -1,3 +1,10 @@
+# Prereqs
+```
+apt install pip
+apt install python3.11-venv
+pip install "fastapi[standard]"
+```
+
 # Make venv
 ```
 python3 -m venv .venv
