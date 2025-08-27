@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  fastapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9009:9009"
+    volumes:
+      - /home/zankorosak/data_folder/:/app/data_folder
+      - /home/zankorosak/LDS/Deployment/docker-compose-0.9/Deployment0.9.0/docker-compose/:/app/docker_compose
+    command: ["uvicorn", "src:app", "--host", "0.0.0.0", "--port", "9009"]
