@@ -43,6 +43,5 @@ Docker compose:
 docker compose up -d --build --force-recreate
 ```
 
-
-### Docs available on 
-`http://lds.cjvt.si:9009/docs#/` (HTTP only)
+# Testing the endpoints
+If you want to upload or list your files, you can use the Swagger API docs on `http://lds.cjvt.si:9009/docs#/` (HTTP only), or you can use the `test.ipynb` jupyter notebook, added in the repository. All the instructions on how to run and send requests are added in that file.
